@@ -1,6 +1,3 @@
-import UI from './ui.js';
-import readline from 'readline';    
-
 class Game {
   constructor() {
     this.secretNumber;
@@ -11,8 +8,7 @@ class Game {
   }
 
   generateSecretNumber() {
-    return Math.floor(Math.random() * (this.range.max - this.range.min + 1)) + this.range.min;
-  }
+  return Math.floor(Math.random() * (this.range.max - this.range.min + 1)) + this.range.min;
   
   guess(number) {
     this.attempts++;

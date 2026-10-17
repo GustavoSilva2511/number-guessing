@@ -1,5 +1,8 @@
 import Game from "./game.js";
 
-const gameInstance = new Game();
+function main() {
+    const gameInstance = new Game();
+    gameInstance.start();
+}
 
-gameInstance.run();
+main();
